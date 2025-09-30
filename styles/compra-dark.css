@@ -1,0 +1,124 @@
+/* ========================================
+   TEMA OSCURO - FORMULARIOS (COMPRA)
+   ======================================== */
+
+form {
+  background-color: #2d2d2d;
+  padding: 2rem;
+  margin: 2rem 0;
+  border-radius: 8px;
+  border: 1px solid #444;
+}
+
+fieldset {
+  border: 1px solid #555;
+  border-radius: 5px;
+  margin-bottom: 1.5rem;
+  padding: 1.5rem;
+}
+
+legend {
+  font-weight: bold;
+  color: #64b5f6;
+  padding: 0 0.5rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #b0b0b0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #555;
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: #383838;
+  color: #e0e0e0;
+}
+
+/* Placeholder en modo oscuro */
+input::placeholder,
+textarea::placeholder {
+  color: #888;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #42a5f5;
+  outline: none;
+  background-color: #424242;
+}
+
+input:required,
+select:required {
+  border-left: 3px solid #26c6da;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 0.5rem;
+  accent-color: #42a5f5;
+}
+
+input[type="radio"] + label,
+input[type="checkbox"] + label {
+  display: inline;
+  font-weight: normal;
+}
+
+input[type="submit"] {
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+
+input[type="submit"]:hover {
+  background-color: #0a1230;
+}
+
+input[type="reset"] {
+  background-color: #37474f;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+input[type="reset"]:hover {
+  background-color: #26c6da;
+}
+
+/* Mejorar visibilidad de options en select */
+option {
+  background-color: #383838;
+  color: #e0e0e0;
+}
+
+/* Mejorar visibilidad de optgroups */
+optgroup {
+  background-color: #2d2d2d;
+  color: #64b5f6;
+  font-weight: bold;
+}

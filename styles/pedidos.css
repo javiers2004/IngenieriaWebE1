@@ -1,0 +1,65 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+  background-color: white;
+}
+
+th {
+  background-color: #15297c;
+  color: white;
+  padding: 1rem;
+  text-align: left;
+}
+
+td {
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+tr:hover {
+  background-color: #e3f2fd;
+}
+
+td img {
+  max-width: 80px;
+  height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+  
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  
+  tr {
+    border: 1px solid #ddd;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+  }
+  
+  td {
+    border: none;
+    padding: 0.5rem;
+    position: relative;
+    padding-left: 50%;
+  }
+  
+  td:before {
+    content: attr(data-label);
+    position: absolute;
+    left: 6px;
+    width: 45%;
+    font-weight: bold;
+  }
+}

@@ -1,0 +1,145 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+h1 {
+  background-color: #15297c;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.menu-container {
+  background-color: #142157;
+  padding: 1rem;
+  text-align: center;
+}
+
+.menu-logo {
+  height: 40px;
+  margin-bottom: 1rem;
+}
+
+.menu-container ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.menu-container li {
+  display: inline-block;
+}
+
+.menu-container a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+}
+
+.menu-container a:hover,
+.menu-container a.active {
+  background-color: #2898ee;
+}
+
+main {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 8px;
+}
+
+h2 {
+  color: #107acc;
+  font-size: 1.8rem;
+  margin: 2rem 0 1rem 0;
+  border-bottom: 2px solid #2898ee;
+  padding-bottom: 0.5rem;
+}
+
+h3 {
+  color: #142157;
+  font-size: 1.3rem;
+  margin: 1.5rem 0 0.5rem 0;
+}
+
+
+p {
+  margin: 1rem 0;
+  line-height: 1.6;
+}
+
+strong {
+  color: #0cbccc;
+}
+
+em {
+  color: #2898ee;
+}
+
+/* === ENLACES === */
+a {
+  color: #2898ee;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* === LISTAS === */
+ul, ol {
+  margin: 1rem 0;
+  padding-left: 2rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: #ddd;
+  margin: 2rem 0;
+}
+
+@media screen and (max-width: 768px) {
+  .menu-container ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  main {
+    margin: 1rem;
+    padding: 1rem;
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+}
