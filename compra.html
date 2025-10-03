@@ -48,7 +48,11 @@
 
           <p>
             <label for="nombre">Nombre completo:</label>
-            <input type="text" id="nombre" name="nombre" required autofocus placeholder="Introduce tu nombre completo">
+            <input type="text" id="nombre" name="nombre" required autofocus placeholder="Introduce tu nombre">
+          </p>
+          <p>
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required placeholder="Introduce tu apellido">
           </p>
 
           <p>
@@ -132,13 +136,22 @@
         <fieldset>
           <legend>Observaciones y comentarios especiales</legend>
           <p>
+            <label for="ciudad">Ciudad:</label>
+            <input type="text" id="ciudad" name="ciudad" required placeholder="Introduce tu ciudad">
+          </p>
+          <p>
+            <label for="calle">Calle:</label>
+            <input type="text" id="calle" name="calle" required placeholder="Introduce tu calle">
+          </p>
+
+          <p>
+            <label for="numero">Número:</label>
+            <input type="text" id="numero" name="numero" required placeholder="Introduce tu número">
+          </p>
+
+          <p>
             <label for="observaciones">Comentarios adicionales:</label><br>
             <textarea id="observaciones" name="observaciones" rows="5" cols="50" placeholder="Escribe aquí cualquier observación especial sobre tu pedido..."></textarea>
-          </p>
-          
-          <p>
-            <label for="direccion">Dirección de entrega:</label>
-            <textarea id="direccion" name="direccion" rows="3" cols="50" placeholder="Calle, número, código postal, ciudad..." required></textarea>
           </p>
         </fieldset>
 
