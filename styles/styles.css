@@ -147,3 +147,21 @@ hr {
 .espacio {
   margin-top: 50px; 
 }
+
+footer {
+  text-align: center;
+  background-color: #142157;
+  color: white;
+  padding: 2rem 1rem;
+  border-top: 4px solid #2898ee;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0 0;
+}
+
+footer li {
+  margin: 0.5rem 0;
+}

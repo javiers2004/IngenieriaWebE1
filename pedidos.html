@@ -14,20 +14,25 @@
   <link rel="alternate stylesheet" href="styles/pedidos-dark.css" title="Oscuro">
 </head>
 <body>
-  
-  <div class="menu-container">
-    <img src="imagenes/icono.png" alt="Logo de Gestión de Stock" class="menu-logo">
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
+
+  <header>
+    <div class="menu-container">
+      <img src="imagenes/icono.png" alt="Logo de Gestión de Stock" class="menu-logo">
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
         <li><a href="compra.html">Realizar compra</a></li>
         <li><a href="pedidos.html" class="active">Ver pedidos</a></li>
         <li><a href="faq.html">FAQ</a></li>
       </ul>
+    </nav>
   </div>
+  </header>
 
   <h1>Historial de pedidos realizados</h1>
 
   <main>
+    <section>
       <h2>Listado completo de pedidos</h2>
       <p>A continuación se muestran todos los pedidos realizados en el sistema. <strong>Nota:</strong> Estos son datos de demostración para fines educativos.</p>
       
@@ -38,7 +43,7 @@
     
       <div class="espacio"></div>
 
-      <h2>Pedidos recientes</h2>
+      <h2 id="pedidos-recientes">Pedidos recientes</h2>
       <h3>Registro completo de pedidos del sistema:</h3>
       <table>
         <thead>
@@ -145,11 +150,13 @@
           </tr>
         </tbody>
       </table>
+      </section>
 
       <div class="espacio"></div>
 
+      <section>
       <div>
-        <h2>Resumen por productos</h2>
+        <h2 id="resumen-productos">Resumen por productos</h2>
         <h3>Análisis de productos más solicitados:</h3>
         <table>
           <thead>
@@ -188,19 +195,32 @@
           </tbody>
         </table>
       </div>
+      </section>
+
+      <div class="espacio"></div>
+
+    <aside>
+      <div>
+        <h2>Navegación interna</h2>
+        <p>Utiliza estos enlaces para navegar rápidamente por la página:</p>
+        <ul>
+          <li><a href="#pedidos-recientes">Sección de pedidos recientes</a></li>
+          <li><a href="#resumen-productos">Sección de resumen por productos</a></li>
+        </ul>
+      </div>
+    </aside>
 
     <div class="espacio"></div>
-    <hr/>
+  </main>
 
-    <div>
+    <footer>
       <h4>Datos de contacto</h4>
       <ul>
         <li><strong>Email:</strong> soporte@gestionstock.com</li>
         <li><strong>Teléfono:</strong> +34 900 123 456</li>
         <li><strong>Horario:</strong> Lunes a Viernes, 9:00 - 18:00</li>
       </ul>
-    </div>
-  </main>
+    </footer>
 
 </body>
 </html>

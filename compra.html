@@ -14,7 +14,8 @@
   <link rel="alternate stylesheet" href="styles/compra-dark.css" title="Oscuro">
 </head>
 <body>
-  
+
+  <header>
   <div class="menu-container">
   <img src="imagenes/icono.png" alt="Logo de Gestión de Stock" class="menu-logo">
     <nav>
@@ -26,10 +27,12 @@
       </ul>
     </nav>
   </div>
+  </header>
 
   <h1>Realizar nueva compra</h1>
 
   <main>
+
       <h2>Formulario de compra de productos</h2>
       <p>Completa el siguiente formulario para <strong>realizar tu pedido</strong>. Todos los campos marcados como requeridos deben ser completados para procesar la compra.</p>
       
@@ -44,7 +47,7 @@
         
         <!-- Datos personales del comprador -->
         <fieldset>
-          <legend>Datos personales del comprador</legend>
+          <legend id="datos-personales">Datos personales del comprador</legend>
 
           <p>
             <label for="nombre">Nombre completo:</label>
@@ -70,7 +73,7 @@
 
         <!-- Información del pedido -->
         <fieldset>
-          <legend>Información del pedido</legend>
+          <legend id="informacion-pedido">Información del pedido</legend>
 
           <p>
             <label for="producto">Selecciona el producto:</label>
@@ -112,7 +115,7 @@
 
         <!-- Opciones adicionales -->
         <fieldset>
-          <legend>Opciones de entrega y servicio</legend>
+          <legend id="opciones-entrega">Opciones de entrega y servicio</legend>
           
           <p>
             <label>Servicios adicionales (marca los que desees):</label><br>
@@ -134,7 +137,7 @@
 
         <!-- Observaciones y comentarios -->
         <fieldset>
-          <legend>Observaciones y comentarios especiales</legend>
+          <legend id="observaciones-comentarios">Observaciones y comentarios especiales</legend>
           <p>
             <label for="ciudad">Ciudad:</label>
             <input type="text" id="ciudad" name="ciudad" required placeholder="Introduce tu ciudad">
@@ -159,7 +162,7 @@
 
         <!-- Términos y condiciones -->
         <fieldset>
-          <legend>Confirmación y términos legales</legend>
+          <legend id="terminos-condiciones">Confirmación y términos legales</legend>
           
           <p>
             <input type="checkbox" id="terminos" name="terminos" required>
@@ -186,18 +189,32 @@
         </div>
       </form>
 
-    <div class="espacio"></div>
-    <hr/>
+      <div class="espacio"></div>
 
-    <div>
+      <aside>
+        <h2>Navegación interna</h2>
+        <p>Utiliza estos enlaces para navegar rápidamente por la página:</p>
+        <ul>
+          <li><a href="#datos-personales">Sección de datos personales</a></li>
+          <li><a href="#informacion-pedido">Sección de información del pedido</a></li>
+          <li><a href="#opciones-entrega">Sección de opciones de entrega</a></li>
+          <li><a href="#observaciones-comentarios">Sección de observaciones y comentarios</a></li>
+          <li><a href="#terminos-condiciones">Sección de términos y condiciones</a></li>
+        </ul>
+      </aside>
+
+    <div class="espacio"></div>
+
+  </main>
+
+    <footer>
       <h4>Datos de contacto</h4>
       <ul>
         <li><strong>Email:</strong> soporte@gestionstock.com</li>
         <li><strong>Teléfono:</strong> +34 900 123 456</li>
         <li><strong>Horario:</strong> Lunes a Viernes, 9:00 - 18:00</li>
       </ul>
-    </div>
-  </main>
+    </footer>
 
 </body>
 </html>
